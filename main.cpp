@@ -168,13 +168,13 @@ Root RootBuilder::build() const
 
 std::ostream& operator<<(std::ostream& os, const Child& child)
 {
-    os << "Child={" << child.getR() << "}";
+    os << "Child={" << "r=" << child.getR() << "}";
     return os;
 }
 
 std::ostream& operator<<(std::ostream& os, const Root& root)
 {
-    os << "Root={" << root.getN() << ',' << *root.getChild() << "}";
+    os << "Root={" << "n=" << root.getN() << ',' << *root.getChild() << "}";
     return os;
 }
 
